@@ -53,6 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: const Color.fromARGB(255, 225, 255, 217),
       appBar: AppBar(
         backgroundColor: Colors.greenAccent,
+        foregroundColor: Colors.black,
         title: Text(widget.title),
       ),
       body: Stack(
@@ -75,7 +76,11 @@ class _MyHomePageState extends State<MyHomePage> {
               padding: EdgeInsets.only(bottom: 20),
               child: Text(
                 'Developed by: Reinwel Tingson',
-                style: TextStyle(fontSize: 18),
+                style: TextStyle(
+                  fontSize: 18,
+                  fontStyle: FontStyle.italic,
+                  color: Colors.black54,
+                ),
               ),
             ),
           ),
@@ -93,7 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
           FloatingActionButton(
             onPressed: _decrementCounter,
             heroTag: 'decrement',
-            backgroundColor: Colors.deepPurple.shade200,
+            backgroundColor: const Color.fromARGB(255, 119, 59, 231),
             child: const Icon(Icons.remove),
           ),
         ],
